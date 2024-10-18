@@ -39,7 +39,7 @@
       }
 
       const toggleThemeButton = document.getElementById('toggle-theme-button');
-      toggleThemeButton.textContent = (currentTheme === DARK_THEME ? "روشن" : "خاموش");
+      toggleThemeButton.textContent = (currentTheme === DARK_THEME ? "روشن" : "تاریک");
     }
 
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -59,14 +59,14 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>آوین</title>
-  <meta name="description" content="آوین اینجا مینویسه..." />
-  <meta property="og:title" content="آوین">
-  <meta property="og:description" content="آوین اینجا مینویسه ...">
+  <title>نجوای باران و رعد</title>
+  <meta name="description" content="دوستت دارم." />
+  <meta property="og:title" content="دوستت دارم">
+  <meta property="og:description" content="دوستت دارم">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@avin" />
-  <meta name="twitter:title" content="آوین" />
-  <meta name="twitter:description" content="آوین اینجا مینویسه..." />
+  <meta name="twitter:title" content="دوستت دارم" />
+  <meta name="twitter:description" content="دوستت دارم" />
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/layout/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/layout/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/layout/apple-icon-72x72.png">
@@ -88,60 +88,37 @@
   <script src="/assets/js/site.min.js" defer></script>
 </head>
 <body>
-  <header class="home"><div class="avatar">
-      <img src="/assets/images/layout/heart.gif" alt="Brad Pitt" width="100" />
-    </div>
-    <a href="/">
-      <img class="logo home" src="/assets/images/layout/logo.png" alt="آوین" />
-    </a>
-    <div class="subtitle home"> اگر بخواهم نظرم را درباره ی زاده شدن و یا هرگز زاده نشدن بگویم ؛ با قاطعیت میتوانم بگویم به دنیا آمدن خیلی بهتر از هرگز به دنیا نیامدن است؛ <b>نامه به کودکی که هرگز زاده نشد</b>.</b></div></header>
+  <header class=""><div style="display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 2px solid #616161">
+      <a href="/"><img class="icon" src="/assets/images/layout/icon-transparent.png"></a>
+      <nav>
+        <a href="/#posts">
+          نوشته‌ها
+        </a>
+        <a href="/about">
+          درباره
+        </a>
+        <a href="/">
+          تماس
+        </a>
+        <a id="toggle-theme-button">تاریک</a>
+      </nav>
+    </div></header>
   <main>
-    <div class="intro">
-  <p>
-    اسمشو آوین انتخاب کرد، اینجا هم شد آوین :)
-    </p>
-    <nav>
-      <a href="https://instagram.com/themori.pv" target="_blank" rel="nofollow">Instagram</a>
-      <a href="https://t.me/lightwinston" target="_blank" rel="nofollow">Telegram</a>
-      <br>
-      <a href="/about">درباره آوین</a>
-      <a class="js-copy" data-value="themorix4@gmail.com">ایمیل</a>
-      <br>
-      <a href="#posts">نوشته‌ها</a>
-      <a id="toggle-theme-button">تاریک</a>
-  </nav>
-</div>
-  <h2 id="posts">نوشته‌ها</h2>
-  <p>
-    تا این لحظه،
-    <strong>3</strong>
-    مطلب نوشته شده.
-    مطالب بر اساس زمان و به صورت نزولی مرتب شدن (جدیدترین پست‌ها بالاترن).
-  </p>
+    
+<article>
+    <h2>💛</h2>
+    <blockquote style="font-style: italic; text-align: center; margin: 20px 0;">
+    "عشق، چیزی نیست که بخواهی پیدا کنی، بلکه چیزی است که تو را پیدا می‌کند."
+    <br>
+    <span style="font-weight: bold;">— لائو تسه</span>
+</blockquote>
 
-<ul class="list-none compact posts-list"><li>
-      <span>
-        <time datetime="Fri Oct 18 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">2024/10/18</time>
-      </span>
-      <a href="/iloveyou/">دوستت دارم💛</a>  
-    </li><li>
-     </ul>
+<p style="text-align: center; font-size: 1.2em; color: #968c83;">
+    خیلی یهویی دوستت دارم.
+</p>
 
-  <ul class="list-none compact posts-list"><li>
-      <span>
-        <time datetime="Thu Sep 21 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">2024/09/28</time>
-      </span>
-      <a href="/rainynight/">نجوای باران و رعد: آرامش شب پشت پنجره</a>  
-    </li><li>
-     </ul>
+</article>
 
-  <ul class="list-none compact posts-list"><li>
-      <span>
-        <time datetime="Thu Sep 21 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">2024/09/26</time>
-      </span>
-      <a href="/about/">آوین دختر مو طلایی زیبا که بود؟</a>  
-    </li><li>
-     </ul>
   </main>
 </body>
 </html>
