@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPD1VWEHS3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BPD1VWEHS3');
+    </script>
+
+    <!-- تم تاریک / روشن -->
+    <script>
+        const DARK_THEME = 'dark';
+        const LIGHT_THEME = 'light';
+        const THEME = "theme";
+
+        function applyTheme() {
+            let html = document.documentElement;
+            let currentTheme = localStorage.getItem(THEME);
+            let darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+            if (!currentTheme && darkModeQuery.matches) {
+                localStorage.setItem(THEME, DARK_THEME);
+                currentTheme = DARK_THEME;
+            }
+
+            if (currentTheme === DARK_THEME) {
+                html.classList.add(DARK_THEME);
+                html.classList.remove(LIGHT_THEME);
+            } else {
+                html.classList.add(LIGHT_THEME);
+                html.classList.remove(DARK_THEME);
+            }
+
+            const toggleThemeButton = document.getElementById('toggle-theme-button');
+            if (toggleThemeButton) {
+                toggleThemeButton.textContent = (currentTheme === DARK_THEME ? "روشن" : "تاریک");
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleThemeButton = document.getElementById('toggle-theme-button');
+
+            if (toggleThemeButton) {
+                toggleThemeButton.onclick = function() {
+                    let currentTheme = localStorage.getItem(THEME);
+                    let newTheme = (currentTheme === DARK_THEME ? LIGHT_THEME : DARK_THEME);
+                    localStorage.setItem(THEME, newTheme);
+                    applyTheme();
+                };
+            }
+
+            applyTheme();
+        });
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حقیقت دنیا را نمیدانم ؛ کامل نمیدانم!</title>
+    <meta name="description" content="حقیقت دنیا">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@avin">
+    <meta name="twitter:title" content="حقیقت دنیا را نمیدانم ؛ کامل نمیدانم!">
+    <meta name="twitter:description" content="حقیقت دنیا را نمیدانم ؛ کامل نمیدانم!">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/layout/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/layout/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/layout/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/layout/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/layout/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/layout/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/layout/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/layout/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/layout/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/layout/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/layout/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/layout/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/layout/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/layout/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/assets/css/site.min.css">
+    <script src="/assets/js/site.min.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 2px solid #616161;">
+            <a href="/"><img class="icon" src="/assets/images/layout/icon-transparent.png" width="16" height="16"></a>
+            <nav>
+                <a href="/#posts">&nbsp;نوشته&zwnj;ها&nbsp;</a>
+                <a href="/about">&nbsp;درباره&nbsp;</a>
+                <a href="/">&nbsp;تماس&nbsp;</a>
+                <a id="toggle-theme-button">تاریک</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h1>حقیقت دنیا را نمیدانم ؛ کامل نمیدانم!</h1>
+            <p>مگر زندگی چیست؟ آن لحظه ای که متولد شدی میدانستی چه در انتظار توست؟ اما تو عجله نکردی...</p>
+            <p>در آن کتاب معروف نوشته بود "<strong>کافیست دستی به موهایش بکِشد تا طبیعت فر خورده را بی آفریند</strong>"</p>
+            <p>راستی مگر کودکی با موهای فر هم متولد می شود؟</p>
+
+            <!-- 🎵 پلیر موزیک -->
+            <audio id="player" autoplay muted loop controls>
+                <source src="/assets/musics/Mammrez%20-%20Daman%20Zardoo.mp3" type="audio/mpeg">
+                مرورگر شما پخش این صدا را پشتیبانی نمی‌کند.
+            </audio>
+
+            <script>
+                // با اولین کلیک یا لمس، صدا رو فعال کن
+                document.addEventListener("click", function() {
+                    const player = document.getElementById("player");
+                    if (player.muted) {
+                        player.muted = false;
+                        player.play();
+                    }
+                }, { once: true });
+            </script>
+        </article>
+    </main>
+</body>
+</html>
