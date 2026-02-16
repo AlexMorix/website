@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head><!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BPD1VWEHS3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-BPD1VWEHS3');
+    </script>
+    <script>
+        const DARK_THEME = 'dark';
+        const LIGHT_THEME = 'light';
+        const THEME = "theme";
+        
+        function applyTheme() {
+          // Do not use body here as it wouldn't be available yet.
+          let html = document.documentElement;
+          let currentTheme = localStorage.getItem(THEME);
+        
+          // Handle macOS dark theme preference.
+          // When the user hasn't set a preference in the site and the preferred
+          // scheme is dark, default to dark.
+          let darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+          if (!currentTheme && darkModeQuery.matches) {
+            localStorage.setItem(THEME, DARK_THEME);
+            currentTheme = DARK_THEME;
+          }
+        
+          if (currentTheme === DARK_THEME) {
+            html.classList.add(DARK_THEME);
+            html.classList.remove(LIGHT_THEME);
+          } else {
+            html.classList.add(LIGHT_THEME);
+            html.classList.remove(DARK_THEME);
+          }
+        
+          const toggleThemeButton = document.getElementById('toggle-theme-button');
+          toggleThemeButton.textContent = (currentTheme === DARK_THEME ? "روشن" : "تاریک");
+        }
+        
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const toggleThemeButton = document.getElementById('toggle-theme-button');
+        
+          toggleThemeButton.onclick = function() {
+            let currentTheme = localStorage.getItem(THEME);
+            let newTheme = (currentTheme === DARK_THEME ? LIGHT_THEME : DARK_THEME);
+            localStorage.setItem(THEME, newTheme);
+            console.log(THEME, newTheme);
+            applyTheme();
+          }
+        
+          applyTheme();
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دیوانه یِ جَبر</title>
+    <meta name="description" content="دیوانه یِ جَبر">
+    <meta content="دیوانه یِ جَبر">
+    <meta content="دیوانه یِ جَبر">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@avin">
+    <meta name="twitter:title" content="دیوانه یِ جَبر">
+    <meta name="twitter:description" content="دیوانه یِ جَبر">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/layout/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/layout/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/layout/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/layout/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/layout/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/layout/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/layout/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/layout/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/layout/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/layout/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/layout/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/layout/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/layout/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/layout/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/site.min.css">
+    <script src="/assets/js/site.min.js" defer=""></script>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; padding-bottom: 5px; border-bottom: 2px solid #616161;"><a href="/"><img class="icon" src="/assets/images/layout/icon-transparent.png"></a>
+            <nav><a href="/#posts">&nbsp;نوشته&zwnj;ها&nbsp;</a> <a href="/about">&nbsp;درباره&nbsp;</a> <a href="/">&nbsp;تماس&nbsp;</a> <a id="toggle-theme-button">تاریک</a></nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>دیوانه یِ جَبر</h1>
+            <p data-start="161" data-end="1052">این روزها آدم نمی&zwnj;دونه دلش باید کجا بلرزه، برای خبرهایی که میاد و نمی&zwnj;ذاره نفس راحت بکشی، برای اسم&zwnj;هایی که یه&zwnj;هو کم می&zwnj;شن و کسی فرصت خداحافظی پیدا نمی&zwnj;کنه، یا برای دلتنگیِ شخصی&zwnj;ای که هیچ ربطی به اخبار نداره ولی همون&zwnj;قدر واقعیه. گاهی وسط فکر کردن به آدم&zwnj;هایی که دیگه نیستن، یه&zwnj;هو یادِ کسی می&zwnj;افتم که هست، اما نمی&zwnj;دونم کجایِ زندگیِ منه، و این قاطی شدنِ غم&zwnj;ها آدمو گیج می&zwnj;کنه. نه می&zwnj;تونی بی&zwnj;خیالِ بیرون باشی، نه دلِ خودتو جمع کنی، انگار دل یاد گرفته هم&zwnj;زمان چند جا درد بگیره. بعضی شب&zwnj;ها نمی&zwnj;دونم نگرانِ خودمم، یا آدم&zwnj;هایی که هر روز اسمشون کمتر گفته می&zwnj;شه، یا فاصله&zwnj;ای که بی&zwnj;صدا بین دو نفر افتاد و هیچ&zwnj;کس مقصرش نبود. فقط می&zwnj;دونم این همه سنگینی، بی&zwnj;دلیل نیست، و دلتنگی وقتی با ترس و ابهام قاطی می&zwnj;شه، دیگه ساده نیست. نوشتن می&zwnj;شه تنها جایی که می&zwnj;تونم این شلوغی رو همون&zwnj;جوری که هست بذارم زمین، بدون نتیجه، بدون جواب، فقط برای اینکه این حس&zwnj;ها، این نگرانی&zwnj;ها، این دوست&zwnj;داشتنِ بلاتکلیف، بی&zwnj;صدا گم نشن.</p>
+            <p data-start="161" data-end="1052">راستی من حق نوشتن اینها را پرداخت کرده ام.با مَن گوش کن</p>
+            <p data-start="161" data-end="1052"><img src="/assets/images/TableForTwo.png"></p>
+        </article>
+    </main>
+</body>
+
+</html>
